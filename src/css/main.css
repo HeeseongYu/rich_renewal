@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "./common.css";
+@import "./header.css";
+
+/* Breakpoint prefix	Minimum width	CSS
+    sm	40rem (640px)	@media (width >= 40rem) { ... }
+    md	48rem (768px)	@media (width >= 48rem) { ... }
+    lg	64rem (1024px)	@media (width >= 64rem) { ... }
+    xl	80rem (1280px)	@media (width >= 80rem) { ... }
+    2xl	96rem (1536px)	@media (width >= 96rem) { ... } 
+*/
+
+/* 테일윈드로 디테일한 조절이 불가능/코드가 너무 지저분해 질 경우 하단에 작성 */
+
+/* 주력상품 섹션 */
+.longArrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+.corePd a::before{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+
+/* 공구상품 섹션 */
+.coBuy_thumb a img{
+    -webkit-mask-image: linear-gradient(to right, white 85%, transparent 100%);
+    mask-image: linear-gradient(to right, white 85%, transparent 100%);
+}
+.coBuy_tit .longArrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+
+/* 분양상담페이지(네온사인 영역) */
+.neon_desc{box-shadow: 0 0 10px hotpink, inset 0 0 10px hotpink;}  
+.neon_desc>div{box-shadow: 0 0 10px white, inset 0 0 10px white;}
+.neon_desc h1{text-shadow: 0 0 7px lightpink, 0 0 10px #ff006a, 0 0 21px #ff006a, 0 0 42px #ff006a, 0 0 60px #ff006a, 0 0 100px #ff00de;}
+.neon_desc .neon_tit{text-shadow: 0 0 7px #fff, 0 0 10px #00a2ff, 0 0 21px #00a2ff, 0 0 42px #ff00de, 0 0 82px #ff00de, 0 0 100px #0077ff, 0 0 120px #0077ff, 0 0 140px #0077ff, 0 0 160px #0077ff;}
+.neon_tit::before,.neon_tit::after{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: white;
+    box-shadow: 0 0 5px hotpink, inset 0 0 1px hotpink;
+}
+.neon_tit span{text-shadow: 0 0 7px lightpink, 0 0 10px #ff006a, 0 0 21px #ff006a, 0 0 42px #ff006a, 0 0 60px #ff006a, 0 0 100px #ff00de;}
+.neon_btns button .neon_open{text-shadow:0 0 7px white, 0 0 10px white, 0 0 21px white;}
+.neon_btns button .neon_open>span{text-shadow: 0 0 7px tomato, 0 0 10px red, 0 0 21px red, 0 0 42px red, 0 0 60px red;}
+.neon_btns button .neon_chev{text-shadow: 0 0 7px #fff, 0 0 10px yellow, 0 0 21px yellow, 0 0 42px yellow, 0 0 60px yellow;}
+
+
+
+.neon_logo img{filter: drop-shadow(0 0 2px tomato) drop-shadow(0 0 7px orange);}
+.neon_star img{filter: drop-shadow(0 0 2px lightSkyblue) drop-shadow(0 0 5px #00a2ff);}

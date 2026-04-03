@@ -1,0 +1,93 @@
+/* Breakpoint prefix	Minimum width	CSS
+    sm	40rem (640px)	@media (width >= 40rem) { ... }
+    md	48rem (768px)	@media (width >= 48rem) { ... }
+    lg	64rem (1024px)	@media (width >= 64rem) { ... }
+    xl	80rem (1280px)	@media (width >= 80rem) { ... }
+    2xl	96rem (1536px)	@media (width >= 96rem) { ... } 
+*/
+
+@import "tailwindcss";
+
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body,
+p,
+pre,
+form,
+span,
+div,
+table,
+td,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input,
+textarea,
+label,
+button,
+select {
+  font-family: 'Figtree', 'Pretendard', Sans-serif;
+  letter-spacing: -0.3px;
+}
+
+
+* {box-sizing: border-box;}   
+ul {
+  list-style: none;
+}
+img{display: block;}
+
+.center{
+  max-width: 1280px;
+  padding: 0 5%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 더보기버튼 아이콘 */
+.more_btn .link .tx {
+  padding-right: 13px;
+  box-sizing: border-box;
+  font-weight: 500;
+  background: transparent url('images/icons/arrow_right.svg') right center no-repeat;
+  background-size: 6px 10px !important;
+}
+
+/* 커스텀 스크롤바 */
+.custom_scroll::-webkit-scrollbar {
+  display: block;
+  height: 5px;   
+}
+.custom_scroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.custom_scroll::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+
+/* blink 애니메이션 */
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+} 
+
+/* flicker 애니메이션 */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {opacity: 1;}
+    20%, 24%, 55%, 68% {opacity: 0.3;}
+}

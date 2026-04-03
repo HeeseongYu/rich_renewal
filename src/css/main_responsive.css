@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "./common.css";
+@import "./header.css";
+
+/* Breakpoint prefix	Minimum width	CSS
+    sm	40rem (640px)	@media (width >= 40rem) { ... }
+    md	48rem (768px)	@media (width >= 48rem) { ... }
+    lg	64rem (1024px)	@media (width >= 64rem) { ... }
+    xl	80rem (1280px)	@media (width >= 80rem) { ... }
+    2xl	96rem (1536px)	@media (width >= 96rem) { ... } 
+*/
+
+@media screen and (max-width:768px){
+    
+    
+    
+    
+    /* 주력상품 섹션 */
+    .corePd a::before {
+        position: absolute;
+        bottom: 0;
+        content: '';
+        height: 50%;
+        z-index: 1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        pointer-events: none;
+    }
+
+    
+    
+    /* 공구상품 섹션 */
+    .coBuy_thumb a img{
+        -webkit-mask-image: none;
+        mask-image:none;
+    }
+}
