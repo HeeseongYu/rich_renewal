@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Item_card } from '../common/Ui';
 
 const Promo_slide = () => {
     
@@ -73,22 +74,15 @@ const Promo_slide = () => {
                             >
                                 {[...Array(10)].map((_, i) => (
                                     <div className="">
-                                        <a href="" className="flex flex-col items-center gap-[10px] max-w-[180px] w-[140px] md:w-[180px]"
-                                            onDragStart={(e) => e.preventDefault()}
-                                        >
-                                            <div className="thumb overflow-hidden rounded-sm"><img src="../images/esset/sampleImg.svg" alt="thumb"/></div>
-                                            <span className="text-[13px] text-left font-500">상품 이름입니다. 상품 이름입니다. 상품 이름입니다.</span>
-                                            <p className="text-center text-[1.1rem] font-[500] leading-none"> price</p>
-                                            <div className="flex gap-[5px] itmes-center justify-center text-center text-[10px]">
-                                                <span className="">
-                                                    <span className="w-[12px] h-[12px] inline-flex items-center justify-center shrink-0 mr-[2px] rounded-full bg-[#dd514c] text-[9px] text-white">P</span>Milage 
-                                                </span>
-                                                + 
-                                                <span className=""> 
-                                                    <span className="w-[12px] h-[12px] inline-flex items-center justify-center shrink-0 mr-[2px] rounded-full bg-[#ec4899] text-[9px] text-white">H</span>Heart
-                                                </span>
-                                            </div>
-                                            <span className="px-[3px] py-[3px] rounded-[3px] bg-[#F59E0B] text-[9px] text-white">badge</span>
+                                        <a href="" className="flex flex-col items-center gap-[10px] max-w-[180px] w-[140px] md:w-[180px]" onDragStart={(e) => e.preventDefault()}>
+                                            <Item_card 
+                                                key={i}
+                                                img="../images/esset/sampleImg.svg" 
+                                                name={`상품 ${i + 1}번입니다.`} 
+                                                price="00,000" 
+                                                dc_price="00,000"
+                                                badge="할인"
+                                            />  
                                         </a>
                                     </div>
                                 ))}

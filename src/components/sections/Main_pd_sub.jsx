@@ -1,6 +1,7 @@
+import { MoreBtn,Item_card } from '../common/Ui';
 const Main_pd_sub = () => {
     return(
-        <div className="bg-white even:bg-gray-100 py-[60px]">
+        <div className="bg-white odd:bg-gray-100 py-[60px]">
             {/* max-w-[768px] md:max-w-[1100px] lg:max-w-[1080px] mx-auto px:5% */}
             <div className="center">
                 {/* 섹션별 타이틀(추후 어드민에서 조정?) */}
@@ -17,29 +18,22 @@ const Main_pd_sub = () => {
                         {[...Array(16)].map((_, i) => (
                             <div className="">
                                 <a href="" className="flex flex-col items-center gap-[10px]">
-                                    <div className="thumb overflow-hidden rounded-sm"><img src="../images/esset/sampleImg.svg" alt="thumb"/></div>
-                                    <span className="text-[13px] text-left font-500">상품 이름입니다. 상품 이름입니다. 상품 이름입니다.</span>
-                                    <p className="text-center text-[1.1rem] font-[500] leading-none"> price</p>
-                                    <div className="flex gap-[5px] itmes-center justify-center text-center text-[10px]">
-                                        <span className="">
-                                            <span className="w-[12px] h-[12px] inline-flex items-center justify-center shrink-0 mr-[2px] rounded-full bg-[#dd514c] text-[9px] text-white">P</span>Milage 
-                                        </span>
-                                        + 
-                                        <span className=""> 
-                                            <span className="w-[12px] h-[12px] inline-flex items-center justify-center shrink-0 mr-[2px] rounded-full bg-[#ec4899] text-[9px] text-white">H</span>Heart
-                                        </span>
-                                    </div>
-                                    <span className="px-[3px] py-[3px] rounded-[3px] bg-[#F59E0B] text-[9px] text-white">badge</span>
+                                    <Item_card 
+                                        key={i}
+                                        img="../images/esset/sampleImg.svg" 
+                                        name={`상품 ${i + 1}번입니다.`} 
+                                        price="00,000" 
+                                        dc_price="00,000"
+                                        badge="할인"
+                                    />  
                                 </a>
                             </div>
                         ))}
                     </div>       
                 </div>
-                <div className="more_btn flex items-center justify-center mt-[30px]">
-                    <a href="" className="link w-[350px] max-w-[350px] h-[50px] box-border flex flex-row items-center justify-center text-[14px] bg-white border border-[#eee] rounded-sm transition duration-300 hover:border-black">
-                        <span className="tx box-border font-[500]">더보기</span>
-                    </a>
-                </div>
+                
+                {/* 더보기버튼 */}
+                <MoreBtn/>
             </div>
         </div>  
     );

@@ -9,7 +9,7 @@ const Rental = () => {
 
 
     return (
-        <div className="sc_rental bg-gray-100 py-[60px]">
+        <div className="sc_rental bg-gray-100 even:bg-white py-[60px]">
             <div className="center">
                 <div className="sc_tit mb-12">
                     <div className="center text-center">

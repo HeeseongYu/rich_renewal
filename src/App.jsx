@@ -11,6 +11,7 @@ import Core_pd from "./components/sections/Core_pd.jsx";
 import Main_pd from "./components/sections/Main_pd.jsx";
 import Main_pd_sub from "./components/sections/Main_pd_sub.jsx";
 import Promo_slide from "./components/sections/Promo_slide.jsx";
+import { Main_search } from "./components/common/Ui.jsx";
 import Mymall from "./components/sections/Mymall.jsx";
 import Rental from "./components/sections/rental.jsx";
 
@@ -37,9 +38,11 @@ function App() {
       {/* 분양상담페이지 이동 */}
       <Mymall/>
 
-
       {/* 기획전 슬라이드 */}
       <Promo_slide/>
+      
+      {/* 메인 가격대/전체검색 */}
+      <Main_search/>      
       
       {/* 숏츠섹션02 */}
       <Shorts_section 
