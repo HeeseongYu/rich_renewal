@@ -74,3 +74,15 @@
 
 .neon_logo img{filter: drop-shadow(0 0 2px tomato) drop-shadow(0 0 7px orange);}
 .neon_star img{filter: drop-shadow(0 0 2px lightSkyblue) drop-shadow(0 0 5px #00a2ff);}
+
+/* 오늘의 운세 */
+
+.fortune{ 
+    background: linear-gradient(to top, 
+    #F0F8FF 0%, 
+    #F0F8FF 10%, 
+    #FFFFFF 50%);
+}
+
+/* 서비스 영역 */
+.sc_Service .btn_order {-webkit-transition: all 0.3s ease-out}

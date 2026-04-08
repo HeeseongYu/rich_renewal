@@ -14,6 +14,8 @@ import Promo_slide from "./components/sections/Promo_slide.jsx";
 import { Main_search } from "./components/common/Ui.jsx";
 import Mymall from "./components/sections/Mymall.jsx";
 import Rental from "./components/sections/rental.jsx";
+import Fortune from "./components/sections/Fortune.jsx";
+import Service from "./components/sections/Service.jsx";
 
 function App() {
   // 닫힌 상태
@@ -56,6 +58,11 @@ function App() {
       {/* 렌탈 섹션 */}
       <Rental/>
 
+      {/* 오늘의 운세 섹션 */}
+      <Fortune/>
+
+      {/* 고객서비스 */}
+      <Service/>
 
       {/* 카테고리 플로팅 바 상품 섹션(전체 리뉴얼 시 적용 예정) */}
       {/* <Main_category/> */}
