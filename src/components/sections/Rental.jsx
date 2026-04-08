@@ -1,9 +1,9 @@
 const Rental = () => {
 
     const rental_list = [
-        {img: '/images/thumbs/핸드폰.png', status:'보러가기', link: '#', alt: '핸드폰' },
-        {img: '/images/thumbs/정수기.png', status:'보러가기', link: '#', alt: '정수기' },
-        {img: '/images/thumbs/수출연계문의.png', status:'준비중입니다.', link: '#', alt: '수출연계문의' }
+        {img: '/images/thumbs/smartphone.png', status:'보러가기', link: '#', alt: '핸드폰' },
+        {img: '/images/thumbs/coway.png', status:'보러가기', link: '#', alt: '정수기' },
+        {img: '/images/thumbs/trade.png', status:'준비중입니다.', link: '#', alt: '수출연계문의' }
     ];
 
 

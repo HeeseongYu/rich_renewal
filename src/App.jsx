@@ -17,6 +17,7 @@ import Rental from "./components/sections/rental.jsx";
 import Fortune from "./components/sections/Fortune.jsx";
 import Service from "./components/sections/Service.jsx";
 
+
 function App() {
   // 닫힌 상태
   const [isMenuOpen, setIsOpen] = useState(false);
